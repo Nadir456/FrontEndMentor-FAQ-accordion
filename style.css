@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main{
+    height: 100vh; width: 100vw;
+}
+.main .top-div{
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-position: center; background-size: 100%; height: 30%; width: 100%;
+    background-repeat: no-repeat; 
+}
+.bottom-div{
+    display: flex; justify-content: center; height: 70%; width: 100%; position: relative;
+    background-color: #F9EEFF;
+}
+.center{
+    height: 100%; width: 30%; background-color: white;
+    border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute; top: -20%; padding: 40px 25px 25px 40px;
+}
+.card .heading{
+    position: relative; padding-left: 50px; display: inline-block; font-size: 35px;
+}
+.card .heading::after{
+    content: ""; position: absolute;
+    background-image: url("./assets/images/icon-star.svg");
+    background-repeat: no-repeat; background-size: contain;
+    height: 25px; width: 25px; left: 0; top: 20%;
+}
+.card .questions{
+    margin-top: 40px;
+}
+.questions .q1  p{
+  text-align: justify; font-size: 12px; color: #c3bec4; margin-top: 10px;
+}
+ 
+.card .questions .q{
+    display: flex; justify-content: space-between; margin: 20px 0 0 0;
+}
+.card .questions .q .btn{
+    cursor: pointer; 
+}
+.card .questions .q h5{
+    cursor: pointer; transition: 0.4s all;
+}
+.card .questions .q h5:hover{
+  color: #AE29EF;
+}
+
+
+@media only screen and (max-width:870px){
+    .center{
+          width: 40%;
+    }   
+}
+@media only screen and (max-width:690px){
+    .center{
+          width: 50%;
+    }   
+}
+@media only screen and (max-width:530px){
+    .center{
+          width: 70%;
+    }   
+}
+@media only screen and (max-width:380px){
+    .center{
+          width: 90%;         
+    } 
+    .main .top-div{
+        background-image: url("./assets/images/background-pattern-mobile.svg");
+        background-position: center; background-size: 100%; height: 30%; width: 100%;
+        background-repeat: no-repeat; 
+    }  
+}
